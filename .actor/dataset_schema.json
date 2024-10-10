@@ -1,0 +1,173 @@
+{
+    "actorSpecification": 1,
+    "title": "Doximity Doctors",
+    "fields": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+            "first_name": {
+                "type": "string"
+            },
+            "middle_name": {
+                "type": "string"
+            },
+            "last_name": {
+                "type": "string"
+            },
+            "credentials": {
+                "type": "string"
+            },
+            "speciality": {
+                "type": "string"
+            },
+            "office_address": {
+                "type": "string"
+            },
+            "phone_number": {
+                "type": "string"
+            },
+            "fax_number": {
+                "type": "string"
+            },
+            "education_and_trainings": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "certifications": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "licenses": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "awards": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "hospitals": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "state": {
+                "type": "string"
+            },
+            "city": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "first_name",
+            "last_name",
+            "credentials",
+            "speciality",
+            "office_address",
+            "phone_number",
+            "education_and_trainings",
+            "certifications",
+            "licenses",
+            "state",
+            "city"
+        ]
+    },
+    "views": {
+
+        "titles": {
+            "title": "Doximity Doctors",
+            "transformation": {
+                "fields": [
+                    "first_name",
+                    "middle_name",
+                    "last_name",
+                    "credentials",
+                    "speciality",
+                    "office_address",
+                    "phone_number",
+                    "fax_number",
+                    "education_and_trainings",
+                    "certifications",
+                    "licenses",
+                    "awards",
+                    "hospitals",
+                    "state",
+                    "city"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "first_name": {
+                        "label": "First Name",
+                        "format": "text"
+                    },
+                    "middle_name": {
+                        "label": "Middle Name",
+                        "format": "text"
+                    },
+                    "last_name": {
+                        "label": "Last Name",
+                        "format": "text"
+                    },
+                    "credentials": {
+                        "label": "Credentials",
+                        "format": "text"
+                    },
+                    "speciality": {
+                        "label": "Speciality",
+                        "format": "text"
+                    },
+                    "office_address": {
+                        "label": "Office Address",
+                        "format": "text"
+                    },
+                    "phone_number": {
+                        "label": "Phone",
+                        "format": "text"
+                    },
+                    "fax_number": {
+                        "label": "Fax",
+                        "format": "text"
+                    },
+                    "education_and_trainings": {
+                        "label": "Education and Trainings",
+                        "format": "array"
+                    },
+                    "certifications": {
+                        "label": "Certifications",
+                        "format": "array"
+                    },
+                    "licenses": {
+                        "label": "Licenses",
+                        "format": "array"
+                    },
+                    "awards": {
+                        "label": "Awards",
+                        "format": "array"
+                    },
+                    "hospitals": {
+                        "label": "Hospitals",
+                        "format": "array"
+                    },
+                    "city": {
+                        "label": "City",
+                        "format": "text"
+                    },
+                    "state": {
+                        "label": "State",
+                        "format": "text"
+                    }
+                }
+            }
+        }
+    }
+}

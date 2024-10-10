@@ -1,0 +1,12 @@
+{
+	"actorSpecification": 1,
+	"name": "doximity-actor",
+	"title": "US Doctors data",
+	"description": "Scrapes doctor information from doximity website",
+	"version": "0.1",
+	"input": "./input_schema.json",
+	"dockerfile": "./Dockerfile",
+	"storages": {
+        "dataset": "./dataset_schema.json"
+	}
+}
